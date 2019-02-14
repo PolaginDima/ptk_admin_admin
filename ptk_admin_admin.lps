@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="35">
+      <Unit0>
+        <Filename Value="ptk_admin_admin.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="55"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="485"/>
+        <CursorPos X="43" Y="489"/>
+        <UsageCount Value="55"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="tdbeditslovari.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DBEditSlovar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="120"/>
+        <CursorPos X="3" Y="123"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="tdbslovaritemplateform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DBTemplateForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="TDBSlovariTemplateForm"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="357"/>
+        <CursorPos X="3" Y="370"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="mydbgrid.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="myDBGrid"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="157"/>
+        <CursorPos Y="176"/>
+        <UsageCount Value="28"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="createdoc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="createDOC"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="189"/>
+        <CursorPos Y="223"/>
+        <UsageCount Value="28"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="workinooandms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="202"/>
+        <CursorPos Y="237"/>
+        <UsageCount Value="28"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="/usr/share/lazarus/1.4.0/lcl/dialogs.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="506"/>
+        <CursorPos X="10" Y="526"/>
+        <UsageCount Value="8"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="/usr/share/fpcsrc/2.6.4/rtl/objpas/sysutils/finah.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="25" Y="23"/>
+        <UsageCount Value="8"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="/usr/share/lazarus/1.4.0/lcl/lclproc.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="301"/>
+        <CursorPos X="29" Y="333"/>
+        <UsageCount Value="8"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="/usr/share/fpcsrc/2.6.4/packages/fcl-db/src/base/db.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1257"/>
+        <CursorPos X="32" Y="1277"/>
+        <UsageCount Value="9"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="/usr/share/fpcsrc/2.6.4/packages/fcl-db/src/sqldb/interbase/fbadmin.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="104"/>
+        <CursorPos X="14" Y="122"/>
+        <UsageCount Value="8"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="/usr/share/fpcsrc/2.6.4/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="661"/>
+        <CursorPos X="15" Y="679"/>
+        <UsageCount Value="8"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="/usr/share/fpcsrc/2.6.4/packages/fcl-db/src/sqldb/sqldb.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="421"/>
+        <UsageCount Value="8"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/packages/fcl-db/src/sqldb/interbase/fbadmin.pp"/>
+        <UnitName Value="FBAdmin"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="127"/>
+        <CursorPos X="14" Y="133"/>
+        <UsageCount Value="8"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../../lazarus/fpc/3.0.2/source/packages/fcl-db/src/sqldb/interbase/fbadmin.pp"/>
+        <UnitName Value="FBAdmin"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="131"/>
+        <CursorPos X="14" Y="140"/>
+        <UsageCount Value="16"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../../lazarus/lcl/stdctrls.pp"/>
+        <UnitName Value="StdCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="535"/>
+        <CursorPos X="15" Y="553"/>
+        <UsageCount Value="11"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../../lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2721"/>
+        <CursorPos Y="2738"/>
+        <UsageCount Value="9"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../../../lazarus/fpc/3.0.2/source/packages/ibase/src/ibase60.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1091"/>
+        <CursorPos X="6" Y="1109"/>
+        <UsageCount Value="9"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="../../../lazarus/fpc/3.0.2/source/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="764"/>
+        <CursorPos X="15" Y="781"/>
+        <UsageCount Value="9"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:/lazarus/lcl/dialogs.pp"/>
+        <UnitName Value="Dialogs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="18"/>
+        <CursorPos X="54" Y="34"/>
+        <UsageCount Value="10"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:/lazarus/lcl/forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="25" Y="69"/>
+        <UsageCount Value="10"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="C:/lazarus/lcl/controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="36"/>
+        <CursorPos X="8" Y="52"/>
+        <UsageCount Value="10"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:/lazarus/fpc/3.0.2/source/packages/fcl-db/src/sqldb/interbase/fbadmin.pp"/>
+        <UnitName Value="FBAdmin"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="596"/>
+        <CursorPos X="29" Y="599"/>
+        <UsageCount Value="11"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="C:/lazarus/lcl/interfaces/win32/win32listsl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="142"/>
+        <CursorPos Y="158"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:/lazarus/lcl/stdctrls.pp"/>
+        <UnitName Value="StdCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="480"/>
+        <CursorPos X="5" Y="497"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="C:/lazarus/fpc/3.0.2/source/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="683"/>
+        <CursorPos X="3" Y="603"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="C:/lazarus/lcl/lclproc.pas"/>
+        <UnitName Value="LCLProc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="340"/>
+        <CursorPos X="10" Y="356"/>
+        <UsageCount Value="10"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="C:/lazarus/fpc/3.0.2/source/packages/fcl-db/src/sqldb/sqldb.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="636"/>
+        <CursorPos X="14" Y="653"/>
+        <UsageCount Value="10"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="C:/lazarus/lcl/lclmessageglue.pas"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="99"/>
+        <CursorPos Y="114"/>
+        <UsageCount Value="10"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="C:/lazarus/lcl/include/dblookup.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="405"/>
+        <CursorPos Y="420"/>
+        <UsageCount Value="10"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="C:/lazarus/lcl/dbctrls.pp"/>
+        <UnitName Value="DbCtrls"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="C:/lazarus/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1459"/>
+        <CursorPos X="26" Y="1480"/>
+        <UsageCount Value="10"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="C:/lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2235"/>
+        <CursorPos X="28" Y="2251"/>
+        <UsageCount Value="10"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="C:/lazarus/lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5380"/>
+        <CursorPos Y="5398"/>
+        <UsageCount Value="10"/>
+      </Unit34>
+    </Units>
+    <JumpHistory Count="19" HistoryIndex="18">
+      <Position1>
+        <Filename Value="main.pas"/>
+        <Caret Line="511" TopLine="477"/>
+      </Position1>
+      <Position2>
+        <Filename Value="main.pas"/>
+        <Caret Line="502" Column="11" TopLine="477"/>
+      </Position2>
+      <Position3>
+        <Filename Value="main.pas"/>
+        <Caret Line="511" TopLine="477"/>
+      </Position3>
+      <Position4>
+        <Filename Value="main.pas"/>
+        <Caret Line="138" Column="132" TopLine="120"/>
+      </Position4>
+      <Position5>
+        <Filename Value="main.pas"/>
+        <Caret Line="139" TopLine="112"/>
+      </Position5>
+      <Position6>
+        <Filename Value="main.pas"/>
+        <Caret Line="508" Column="3" TopLine="478"/>
+      </Position6>
+      <Position7>
+        <Filename Value="main.pas"/>
+        <Caret Line="511" Column="16" TopLine="478"/>
+      </Position7>
+      <Position8>
+        <Filename Value="main.pas"/>
+        <Caret Line="125" Column="14" TopLine="120"/>
+      </Position8>
+      <Position9>
+        <Filename Value="main.pas"/>
+        <Caret Line="137" Column="18" TopLine="120"/>
+      </Position9>
+      <Position10>
+        <Filename Value="main.pas"/>
+        <Caret Line="508" Column="15" TopLine="478"/>
+      </Position10>
+      <Position11>
+        <Filename Value="main.pas"/>
+        <Caret Line="198" Column="30" TopLine="169"/>
+      </Position11>
+      <Position12>
+        <Filename Value="main.pas"/>
+        <Caret Line="143" Column="8" TopLine="112"/>
+      </Position12>
+      <Position13>
+        <Filename Value="main.pas"/>
+        <Caret Line="514" TopLine="484"/>
+      </Position13>
+      <Position14>
+        <Filename Value="main.pas"/>
+        <Caret Line="515" TopLine="484"/>
+      </Position14>
+      <Position15>
+        <Filename Value="main.pas"/>
+        <Caret Line="516" TopLine="484"/>
+      </Position15>
+      <Position16>
+        <Filename Value="main.pas"/>
+        <Caret Line="514" TopLine="484"/>
+      </Position16>
+      <Position17>
+        <Filename Value="main.pas"/>
+        <Caret Line="502" Column="7" TopLine="429"/>
+      </Position17>
+      <Position18>
+        <Filename Value="main.pas"/>
+        <Caret Line="147" Column="20" TopLine="124"/>
+      </Position18>
+      <Position19>
+        <Filename Value="tdbeditslovari.pas"/>
+        <Caret Line="123" TopLine="76"/>
+      </Position19>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="3">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="createdoc.pas"/>
+        <Line Value="223"/>
+      </Item1>
+      <Item2>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="workinooandms.pas"/>
+        <Line Value="237"/>
+      </Item2>
+      <Item3>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="mydbgrid.pas"/>
+        <Line Value="176"/>
+      </Item3>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

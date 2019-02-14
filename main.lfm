@@ -1,0 +1,660 @@
+object Form1: TForm1
+  Left = 476
+  Height = 502
+  Top = 184
+  Width = 920
+  Caption = 'Администратор'
+  ClientHeight = 502
+  ClientWidth = 920
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poDesktopCenter
+  LCLVersion = '1.8.2.0'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 149
+    Top = 0
+    Width = 920
+    Align = alTop
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource3
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 353
+    Top = 149
+    Width = 311
+    Align = alLeft
+    Caption = 'пользователи базы'
+    ClientHeight = 335
+    ClientWidth = 307
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 10
+      Height = 13
+      Top = 0
+      Width = 29
+      Caption = 'логин'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 10
+      Height = 13
+      Top = 32
+      Width = 30
+      Caption = 'район'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 10
+      Height = 13
+      Top = 64
+      Width = 24
+      Caption = 'Роль'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 10
+      Height = 13
+      Top = 96
+      Width = 44
+      Caption = 'Фамилия'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 10
+      Height = 13
+      Top = 128
+      Width = 19
+      Caption = 'Имя'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 10
+      Height = 13
+      Top = 160
+      Width = 49
+      Caption = 'Отчество'
+      ParentColor = False
+    end
+    object DBEdit1: TDBEdit
+      Left = 64
+      Height = 21
+      Top = 0
+      Width = 198
+      DataField = 'NAME'
+      DataSource = DataSource3
+      ReadOnly = True
+      CharCase = ecNormal
+      MaxLength = 0
+      TabOrder = 0
+    end
+    object DBLookupComboBox1: TDBLookupComboBox
+      Left = 64
+      Height = 21
+      Top = 32
+      Width = 176
+      DataField = 'ID_RAION'
+      DataSource = DataSource3
+      Enabled = False
+      KeyField = 'ID'
+      ListField = 'NAME'
+      ListFieldIndex = 0
+      ListSource = DataSource2
+      LookupCache = False
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object DBLookupComboBox2: TDBLookupComboBox
+      Left = 64
+      Height = 21
+      Top = 64
+      Width = 198
+      DataField = 'ID_ROLE'
+      DataSource = DataSource3
+      Enabled = False
+      KeyField = 'ID'
+      ListField = 'NAME'
+      ListFieldIndex = 0
+      ListSource = DataSource4
+      LookupCache = False
+      Style = csDropDownList
+      TabOrder = 2
+    end
+    object DBEdit2: TDBEdit
+      Left = 64
+      Height = 21
+      Top = 96
+      Width = 198
+      DataField = 'FAM'
+      DataSource = DataSource3
+      ReadOnly = True
+      CharCase = ecNormal
+      MaxLength = 0
+      TabOrder = 3
+    end
+    object DBEdit3: TDBEdit
+      Left = 64
+      Height = 21
+      Top = 128
+      Width = 198
+      DataField = 'NAM'
+      DataSource = DataSource3
+      ReadOnly = True
+      CharCase = ecNormal
+      MaxLength = 0
+      TabOrder = 4
+    end
+    object DBEdit4: TDBEdit
+      Left = 64
+      Height = 21
+      Top = 160
+      Width = 198
+      DataField = 'OTCH'
+      DataSource = DataSource3
+      ReadOnly = True
+      CharCase = ecNormal
+      MaxLength = 0
+      TabOrder = 5
+    end
+    object Button7: TButton
+      Left = 241
+      Height = 23
+      Top = 32
+      Width = 23
+      Caption = '...'
+      Enabled = False
+      OnClick = Button7Click
+      TabOrder = 6
+    end
+    object Button9: TButton
+      Left = 10
+      Height = 29
+      Top = 192
+      Width = 100
+      Caption = 'добавить'
+      OnClick = Button9Click
+      TabOrder = 7
+    end
+    object Button8: TButton
+      Left = 173
+      Height = 29
+      Top = 192
+      Width = 100
+      Caption = 'удалить'
+      OnClick = Button8Click
+      TabOrder = 8
+    end
+    object Button13: TButton
+      Left = 10
+      Height = 29
+      Top = 224
+      Width = 100
+      Caption = 'изменить'
+      OnClick = Button13Click
+      TabOrder = 9
+    end
+    object Button1: TButton
+      Left = 173
+      Height = 32
+      Top = 228
+      Width = 100
+      Caption = 'установить роль'
+      OnClick = Button1Click
+      TabOrder = 10
+    end
+    object Button2: TButton
+      Left = 173
+      Height = 29
+      Top = 264
+      Width = 100
+      Caption = 'Удалить роль'
+      OnClick = Button2Click
+      TabOrder = 11
+    end
+  end
+  object Label10: TLabel
+    Left = 504
+    Height = 13
+    Top = 8
+    Width = 23
+    Caption = 'база'
+    ParentColor = False
+  end
+  object GroupBox2: TGroupBox
+    Left = 311
+    Height = 353
+    Top = 149
+    Width = 311
+    Align = alLeft
+    Caption = 'пользователи на сервере'
+    ClientHeight = 335
+    ClientWidth = 307
+    TabOrder = 2
+    object ListBox1: TListBox
+      Left = 0
+      Height = 175
+      Top = 8
+      Width = 304
+      ItemHeight = 0
+      TabOrder = 0
+    end
+    object Button10: TButton
+      Left = 0
+      Height = 34
+      Top = 192
+      Width = 122
+      Caption = 'Добавить на сервере'
+      OnClick = Button10Click
+      TabOrder = 1
+    end
+    object Button12: TButton
+      Left = 0
+      Height = 34
+      Top = 229
+      Width = 122
+      Caption = 'изменить пароль'
+      OnClick = Button12Click
+      TabOrder = 2
+    end
+    object Button11: TButton
+      Left = 182
+      Height = 34
+      Top = 192
+      Width = 122
+      Caption = 'удалить на сервере'
+      OnClick = Button11Click
+      TabOrder = 3
+    end
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Password = 'masterkey'
+    Transaction = SQLTransaction1
+    UserName = 'SYSDBA'
+    CharSet = 'UTF8'
+    LogEvents = []
+    ConnectorType = 'Firebird'
+    left = 200
+    top = 64
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'NAME_USER'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'FAM'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'NAM'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'OTCH'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'RAION'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'NAME_ROLE'
+        DataType = ftString
+        Precision = -1
+        Size = 1020
+      end>
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select USERS.NAME as name_user, USERS.FAM, USERS.NAM, USERS.OTCH, RAIONS.NAME as raion, ROLES.RROLE as name_role'
+      '  from USERS JOIN RAIONS ON RAIONS.ID=USERS.ID_RAION'
+      'join ROLES on (ROLES.ID=USERS.ID_ROLE)'
+      'order by  RAIONS.NAME, USERS.NAME, USERS.FAM, USERS.NAM, USERS.OTCH'
+    )
+    Params = <>
+    left = 229
+    top = 64
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLConnector1
+    left = 258
+    top = 66
+  end
+  object OpenDialog1: TOpenDialog
+    Width = 720
+    Height = 540
+    left = 294
+    top = 64
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 323
+    top = 64
+  end
+  object SQLQuery2: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'PREFIKS'
+        DataType = ftString
+        Precision = -1
+        Size = 12
+      end    
+      item
+        Name = 'NAME'
+        DataType = ftString
+        Precision = -1
+        Size = 60
+      end    
+      item
+        Name = 'SMALL_NAME'
+        DataType = ftString
+        Precision = -1
+        Size = 1020
+      end    
+      item
+        Name = 'FULL_NAME'
+        DataType = ftString
+        Precision = -1
+        Size = 1020
+      end    
+      item
+        Name = 'ID_BOSS'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'ID_MAINBUH'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'ADDRESS'
+        DataType = ftString
+        Precision = -1
+        Size = 1020
+      end    
+      item
+        Name = 'FULL_KR_NAME'
+        DataType = ftString
+        Precision = -1
+        Size = 400
+      end    
+      item
+        Name = 'INN'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'OGRN'
+        DataType = ftString
+        Precision = -1
+        Size = 52
+      end>
+    Database = SQLConnector1
+    Transaction = SQLTransaction2
+    SQL.Strings = (
+      'select * from RAIONS'
+      'order by NAME'
+    )
+    Params = <>
+    left = 432
+    top = 66
+  end
+  object SQLTransaction2: TSQLTransaction
+    Active = False
+    Database = SQLConnector1
+    Params.Strings = (
+      'isc_tpb_read'
+      'isc_tpb_read_committed'
+      'isc_tpb_nowait'
+    )
+    left = 400
+    top = 66
+  end
+  object DataSource2: TDataSource
+    DataSet = SQLQuery2
+    left = 472
+    top = 66
+  end
+  object FBAdmin1: TFBAdmin
+    User = 'SYSDBA'
+    Password = 'masterkey'
+    Protocol = IBSPLOCAL
+    UseExceptions = False
+    WaitInterval = 0
+    left = 352
+    top = 64
+  end
+  object SQLQuery3: TSQLQuery
+    PacketRecords = -1
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'ID_RAION'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'NAME'
+        DataType = ftString
+        Precision = -1
+        Size = 40
+      end    
+      item
+        Name = 'RROLE'
+        DataType = ftString
+        Precision = -1
+        Size = 80
+      end    
+      item
+        Name = 'FAM'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'NAM'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'OTCH'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'ID_ROLE'
+        DataType = ftInteger
+        Precision = -1
+      end>
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from users'
+    )
+    Params = <>
+    left = 224
+    top = 112
+    object SQLQuery3ID: TLongintField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      ReadOnly = False
+      Required = True
+      Visible = False
+    end
+    object SQLQuery3ID_RAION: TLongintField
+      FieldKind = fkData
+      FieldName = 'ID_RAION'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Visible = False
+    end
+    object SQLQuery3NAME: TStringField
+      DisplayLabel = 'логин'
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'NAME'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 40
+    end
+    object StringField1: TStringField
+      DisplayLabel = 'район'
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'NAME1'
+      Index = 3
+      KeyFields = 'ID_RAION'
+      LookupCache = False
+      LookupDataSet = SQLQuery2
+      LookupKeyFields = 'ID'
+      LookupResultField = 'NAME'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object StringField2: TStringField
+      DisplayLabel = 'роль'
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'NAME2'
+      Index = 4
+      KeyFields = 'ID_ROLE'
+      LookupCache = False
+      LookupDataSet = SQLQuery4
+      LookupKeyFields = 'ID'
+      LookupResultField = 'NAME'
+      ProviderFlags = []
+      ReadOnly = False
+      Required = False
+      Size = 1020
+    end
+    object SQLQuery3FAM: TStringField
+      DisplayLabel = 'фамилия'
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'FAM'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 120
+    end
+    object SQLQuery3NAM: TStringField
+      DisplayLabel = 'имя'
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'NAM'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 120
+    end
+    object SQLQuery3OTCH: TStringField
+      DisplayLabel = 'отчество'
+      DisplayWidth = 20
+      FieldKind = fkData
+      FieldName = 'OTCH'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 120
+    end
+    object SQLQuery3ID_ROLE: TLongintField
+      FieldKind = fkData
+      FieldName = 'ID_ROLE'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Visible = False
+    end
+  end
+  object DataSource3: TDataSource
+    DataSet = SQLQuery3
+    left = 253
+    top = 112
+  end
+  object SQLQuery4: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'RROLE'
+        DataType = ftString
+        Precision = -1
+        Size = 1020
+      end    
+      item
+        Name = 'NAME'
+        DataType = ftString
+        Precision = -1
+        Size = 1020
+      end>
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from roles'
+    )
+    Params = <>
+    left = 512
+    top = 64
+  end
+  object DataSource4: TDataSource
+    DataSet = SQLQuery4
+    left = 544
+    top = 66
+  end
+end
